@@ -9,8 +9,8 @@ pipeline {
         }
         stage('Deploy to XAMPP') {
             steps {
-                sh "scp -r -o StrictHostKeyChecking=no *.html http://localhost
-@http://127.0.0.1:/opt/lampp/htdocs/"
+                sh "scp -r -o StrictHostKeyChecking=no *.html localhost
+@127.0.0.1:/opt/lampp/htdocs/"
             }
         }
     }
